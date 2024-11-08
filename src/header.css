@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 1.5rem 1rem;
+  font-size: large;
+}
+
+/* Link Styling */
+.link {
+  text-decoration: none;
+  color: rgb(125, 203, 225);
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.link:hover {
+  color: rgb(158, 216, 49);
+}
+
+/* Active Link Styling */
+.link.active {
+  background-color: blueviolet; /* Background for active tab */
+  color: white; /* Change text color for contrast */
+  border-radius: 1em; /* Rounded border for active tab */
+}
+
+.nav-img {
+  align-self: flex-start;
+  height: 8rem;
+  width: 8rem;
+  flex: 0 0 auto; /* Prevents the logo from stretching */
+}
+
+/* Center the navigation links */
+.nav-menu {
+  flex: 1; /* Takes up remaining space, allowing centering */
+  display: flex;
+  justify-content: center; /* Centers links within the nav-menu div */
+  gap: 1.5rem; /* Space between navigation links */
+}
